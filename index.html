@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zóide - Mensagens Secretas Disfarçadas</title>
+    <meta name="description" content="Zóide é o aplicativo de mensagens que ninguém saberá que você tem. Escondido dentro de um jogo, ele protege suas conversas com a máxima discrição.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --background-color: #121212;
+            --surface-color: #1e1e1e;
+            --primary-color: #007bff;
+            --primary-hover: #0056b3;
+            --text-color: #ffffff;
+            --text-secondary: #b3b3b3;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: auto;
+            padding: 0 20px;
+            overflow: hidden;
+        }
+
+        header {
+            padding: 40px 0;
+        }
+
+        header img.logo {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+
+        .hero {
+            padding: 60px 0;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+            color: var(--text-secondary);
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--primary-color);
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background: var(--primary-hover);
+        }
+        
+        #features {
+            padding: 80px 0;
+            background-color: var(--surface-color);
+        }
+
+        #features h2, #download h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            text-align: left;
+        }
+
+        .feature-card {
+            background: #2a2a2a;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+        
+        .feature-card p {
+            color: var(--text-secondary);
+        }
+        
+        #download {
+            padding: 80px 0;
+        }
+        
+        .download-options {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .download-card {
+            background-color: var(--surface-color);
+            border-radius: 10px;
+            padding: 30px;
+            width: 100%;
+            max-width: 500px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .download-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .download-card .version-info {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        
+        footer {
+            padding: 30px 0;
+            background-color: var(--surface-color);
+            margin-top: 60px;
+        }
+        
+        footer p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            #features h2, #download h2 {
+                font-size: 2rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <img src="logo_zoide.jpg" alt="Logo Zóide" class="logo">
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Sua Privacidade, o Nosso Jogo.</h1>
+                <p>Zóide é o aplicativo de mensagens que ninguém saberá que você tem. Escondido dentro de um jogo divertido, ele protege suas conversas com a máxima discrição.</p>
+                <a href="#download" class="btn">Baixar Agora</a>
+            </div>
+        </section>
+
+        <section id="features">
+            <div class="container">
+                <h2>Comunicação Secreta. Disfarce Perfeito.</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>Disfarce Genial</h3>
+                        <p>O Zóide se parece e funciona como um jogo ou um app comum. Sua lista de contatos e mensagens só é acessível através de um gesto ou senha secreta que só você conhece.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Segurança Total</h3>
+                        <p>Converse com tranquilidade. Todas as suas mensagens de texto, áudio, fotos e vídeos são protegidas para que apenas você e seu contato possam ter acesso.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Múltiplas Versões</h3>
+                        <p>Escolha o disfarce que mais combina com você. O Zóide está disponível em diferentes jogos e aplicativos para garantir que sua privacidade nunca seja comprometida.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="download">
+            <div class="container">
+                <h2>Escolha sua Versão</h2>
+                <p>Baixe o disfarce perfeito para suas conversas secretas.</p>
+
+                <div class="download-options">
+                    
+                    <div class="download-card">
+                        <h3>Versão Tradicional</h3>
+                        <p class="version-info">Um jogo simples e divertido que esconde seu mensageiro secreto.</p>
+                        <a href="SEU_LINK_AQUI/zoide_tradicional.apk" class="btn">Download Jogo Tradicional</a>
+                    </div>
+                    
+                    <div class="download-card">
+                        <h3>Versão Flappy Bird</h3>
+                        <p class="version-info">O clássico jogo de pássaro que agora também protege suas conversas.</p>
+                        <a href="SEU_LINK_AQUI/zoide_flappy.apk" class="btn">Download Flappy Bird</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Zóide. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
